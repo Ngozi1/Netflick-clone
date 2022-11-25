@@ -76,7 +76,7 @@
     background-color: red;
     color: white;
     border: 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 10rem;
 }
 hr{
@@ -186,3 +186,22 @@ hr{
     text-align: center;
     font-size: 1.2rem;
 }
+.footer_section{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.footer_section a{
+    text-decoration: none;
+    color: gray;
+    line-height: 2rem;
+}
+
+/* .contact a{
+    padding-top: 1.5rem;
+} */
+
+.footer_section_two, .footer_section_three, .footer_section_four {
+    padding-top: 2rem;
+} 
