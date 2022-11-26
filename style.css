@@ -15,16 +15,16 @@
     width: 12%;
 }
 
- .btns {
-     padding: 0.2rem 1rem;  
+ .nav_bar button{
+    padding: 0.2rem 1rem;  
     background-color: red;
     color: white;
-    border: 0;
-    /* font-size: 1rem; */
-    
-    
+    border: 0; 
+    margin-right: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+   
 }
-
 
 .hero{
     color: white;
@@ -159,8 +159,59 @@ hr{
 }
 .faq{
     background-color: black;
+    /* display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center; */
     
 }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: rgb(43, 41, 41);
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 1.8rem;
+    display: block;
+    justify-content: center;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* .active, .accordion:hover {
+    background-color: #ccc;
+  } */
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: rgb(43, 41, 41);
+    display: none;
+    overflow: hidden;
+    width: 50%;
+    color: white;
+    font-size: 1.3rem;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 1.5rem;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+  
 
 .faq h1{
     color: white;
@@ -169,20 +220,11 @@ hr{
     padding: 2rem 1.5rem;
 }
 
-.faq h4{
-    color: white;
-     padding: 1rem 0;
-    text-align: center;
-    background-color: rgb(24, 23, 23);
-    width: 30rem;
-    font-size: 1.5rem;
-    margin-left: 20rem;
-    margin-bottom: 0.5rem;
-}
+
 
 .email p{
     color: white;
-    margin-top: 3rem;
+    margin-top: 4.5rem;
     text-align: center;
     font-size: 1.2rem;
 }
@@ -190,6 +232,7 @@ hr{
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;
+    background-color: black;
 }
 
 .footer_section a{
